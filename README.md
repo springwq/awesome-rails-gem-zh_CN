@@ -1,7 +1,7 @@
 # Awesome Rails Gem [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
-A collection of awesome Ruby Gems for Rails development.
+一份关于"Rails 常用 Gem" 的汇总。
 
-The goal is to help every Rails developer to build an awesome Rails product/service.
+目标：帮助每位 Rails 开发者写出更加牛逼的产品。
 
 * [Rails Gem List](#rails-gem-list)
   * [User](#user)
@@ -25,16 +25,16 @@ The goal is to help every Rails developer to build an awesome Rails product/serv
 ## User
 
 ### Authentication
-* [Devise](https://github.com/plataformatec/devise/) - Devise is a flexible authentication solution for Rails based on Warden.
-* [Knock](https://github.com/nsarno/knock) - Seamless JWT authentication for Rails API.
-* [Clearance](https://github.com/thoughtbot/clearance) - Rails authentication with email & password.
-* [Devise token auth](https://github.com/lynndylanhurley/devise_token_auth) - Token based authentication for Rails JSON APIs.
+* [Devise](https://github.com/plataformatec/devise/) - 用于快速构建用户功能，如：注册，登陆，个人设置，找回密码...
+* [Knock](https://github.com/nsarno/knock) - 符合 JWT (JSON Web Token) 规范的认证 API
+* [Clearance](https://github.com/thoughtbot/clearance) - 基于邮箱密码认证
+* [Devise token auth](https://github.com/lynndylanhurley/devise_token_auth) - 基于 Token 认证的 JSON API
 
 ### Authorization
-* [Pundit](https://github.com/elabs/pundit) - Pundit provides a set of helpers which guide you in leveraging regular Ruby classes and object oriented design patterns to build a simple, robust and scaleable authorization system.
-* [cancancan](https://github.com/CanCanCommunity/cancancan) - Continuation of CanCan, the authorization Gem for Ruby on Rails.CanCan is an authorization library for Ruby on Rails which restricts what resources a given user is allowed to access. All permissions are defined in a single location (the Ability class) and not duplicated across controllers, views, and database queries.
-* [rolify](https://github.com/RolifyCommunity/rolify) - Role management library with resource scoping.
-* [acl9](https://github.com/be9/acl9/) - Acl9 is a role-based authorization system that provides a concise DSL for securing your Rails application.
+* [Pundit](https://github.com/elabs/pundit) - Pundit 提供一系列方法来扩展 Ruby 的基本类和面相对象的设计模式，用以构建简单、强壮、可伸缩的认证系统
+* [cancancan](https://github.com/CanCanCommunity/cancancan) - 扩展 CanCan，可以规定某个用户拥有哪些资源，所有权限都定义在一个单独的地方( Ability 类) 
+* [rolify](https://github.com/RolifyCommunity/rolify) - 角色管理
+* [acl9](https://github.com/be9/acl9/) - 基于角色的认证系统，并且提供简洁的 DSL
 
 
 ### Omniauth
@@ -46,180 +46,170 @@ The goal is to help every Rails developer to build an awesome Rails product/serv
 * [omniauth-linkedin-oauth2](https://github.com/decioferreira/omniauth-linkedin-oauth2)
 
 ## Active Record
-* [Enumerize](https://github.com/brainspec/enumerize) - Enumerated attributes with I18n and ActiveRecord/Mongoid support. It can be integrated with Simple Form.
-* [counter_culture](https://github.com/magnusvk/counter_culture) - Turbo-charged counter caches for your Rails app. Huge improvements over the Rails standard counter caches.
-* [custom_counter_cache](https://github.com/cedric/custom_counter_cache) - A simple approach to creating a custom counter cache that can be used across multiple models.
-* [Sequenced](https://github.com/djreimer/sequenced) - Sequenced is a simple gem that generates scoped sequential IDs for ActiveRecord models.
-* [FriendlyId](https://github.com/norman/friendly_id) - FriendlyId is the “Swiss Army bulldozer” of slugging and permalink plugins for ActiveRecord. It allows you to create pretty URL’s and work with human-friendly strings as if they were numeric ids for ActiveRecord models.
-* [AASM](https://github.com/aasm/aasm) - State machines for Ruby classes (plain Ruby, Rails Active Record, Mongoid).
-* [PaperTrail](https://github.com/airblade/paper_trail) - PaperTrail lets you track changes to your models' data. It's good for auditing or versioning.
-* [paranoia](https://github.com/rubysherpas/paranoia) - ActiveRecord plugin allowing you to hide and restore records without actually deleting them.
-* [Validates](https://github.com/kaize/validates) - Validates provides collection of useful custom validators for Rails applications, including:
-  * EmailValidator
-  * UrlValidator
-  * SlugValidator
-  * MoneyValidator
-  * IpValidator
-  * AssociationLengthValidator
-  * AbsolutePathValidator
-  * UriComponentValidator
-  * ColorValidator
-  * EanValidator (EAN-8 & EAN-13)
-* [globalize](https://github.com/globalize/globalize) - Rails I18n de-facto standard library for ActiveRecord model/data translation.
-* [deep_cloneable](https://github.com/moiristo/deep_cloneable) - This gem gives every ActiveRecord::Base object the possibility to do a deep clone that includes user specified associations.
-* [social_shares](https://github.com/Timrael/social_shares) - Check how many times url was shared in social networks.
-* [public_activity](https://github.com/chaps-io/public_activity) - Easy activity tracking for models - similar to Github's Public Activity.
-* [goldiloader](https://github.com/salsify/goldiloader) - Automatic ActiveRecord eager loading to reduce the number of database queries run by your application.
+* [Enumerize](https://github.com/brainspec/enumerize) - 适用枚举类型的属性，支持 i18n 、activerecord、mongoid，并可以集成到 Simple Form
+* [counter_culture](https://github.com/magnusvk/counter_culture) - 计数缓存
+* [custom_counter_cache](https://github.com/cedric/custom_counter_cache) - 简单的自定义技术缓存，可以在 model间共用
+* [Sequenced](https://github.com/djreimer/sequenced) - 管理 排序性 id 的 gem
+* [FriendlyId](https://github.com/norman/friendly_id) - URL 友好的 ID 
+* [AASM](https://github.com/aasm/aasm) - 状态机
+* [PaperTrail](https://github.com/airblade/paper_trail) - 记录版本、审计用的，记录数据的变化
+* [paranoia](https://github.com/rubysherpas/paranoia) - 假删除
+* [Validates](https://github.com/kaize/validates) - 提供一系列有用的自定义验证，包括Email, Url, Slug, Money, Ip, AssociationLength, AbsolutePath, UriComponent, Color, Ean
+* [globalize](https://github.com/globalize/globalize) - 数据翻译中的 i18n 库
+* [deep_cloneable](https://github.com/moiristo/deep_cloneable) - 深度拷贝、支持关系拷贝、可选拷贝
+* [social_shares](https://github.com/Timrael/social_shares) - 检查 url 在社交网络中的共享次数
+* [public_activity](https://github.com/chaps-io/public_activity) - 活动追踪，类似 github的 Public Activity
+* [goldiloader](https://github.com/salsify/goldiloader) - activerecode 预加载，用来减少数据库查询次数
 * Tagging
-  * [ActsAsTaggableOn](https://github.com/mbleigh/acts-as-taggable-on) - A tagging plugin for Rails applications that allows for custom tagging along dynamic contexts.
-  * [closure_tree](https://github.com/mceachen/closure_tree) - Easily and efficiently make your ActiveRecord models support hierarchies.
+  * [ActsAsTaggableOn](https://github.com/mbleigh/acts-as-taggable-on) - 打标记
+  * [closure_tree](https://github.com/mceachen/closure_tree) - 多层级标记
 
 ## Plugins
-* [Spreadsheet](https://github.com/zdavatz/spreadsheet) - Library is designed to read and write Spreadsheet Documents.
-* [Chartkick](https://github.com/ankane/chartkick) - Chartkick helps your to create beautiful Javascript charts with one line of Ruby.
-* [kaminari](https://github.com/amatsuda/kaminari) - A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Rails 3 and 4.
-* [CKEditor](https://github.com/galetahub/ckeditor) - CKEditor is a WYSIWYG text editor designed to simplify web content creation. It brings common word processing features directly to your web pages. Enhance your website experience with our community maintained editor. [ckeditor.com](http://ckeditor.com)
-* [HTML::Pipeline](https://github.com/jch/html-pipeline) - GitHub HTML processing filters and utilities. This module includes a small framework for defining DOM based content filters and applying them to user provided content.
-* [Slack Notifier](https://github.com/stevenosloan/slack-notifier) is a simple wrapper to send notifications to [Slack](https://slack.com/) webhooks.
-* [Rails ERD](https://github.com/voormedia/rails-erd) - Generate Entity-Relationship Diagrams for Rails applications.
-* [Parity](https://github.com/thoughtbot/parity) - Shell commands for development, staging, and production parity for Heroku apps.
-* [Airbrussh](https://github.com/mattbrictson/airbrussh) - Airbrussh pretties up your SSHKit and Capistrano output
+* [Spreadsheet](https://github.com/zdavatz/spreadsheet) - 读写 Spreadsheet 文档
+* [Chartkick](https://github.com/ankane/chartkick) - 用一行 ruby 代码创建漂亮的 js 图表
+* [kaminari](https://github.com/amatsuda/kaminari) - 很火的分页插件
+* [CKEditor](https://github.com/galetahub/ckeditor) - 所见即所得编辑器
+* [HTML::Pipeline](https://github.com/jch/html-pipeline) - html 处理器
+* [Slack Notifier](https://github.com/stevenosloan/slack-notifier) 给 slack 发通知
+* [Rails ERD](https://github.com/voormedia/rails-erd) - 生成实体关系图
+* [Parity](https://github.com/thoughtbot/parity) - 为 heroku 提供 shell 命令
+* [Airbrussh](https://github.com/mattbrictson/airbrussh) - 美化 SSHKit 和 Capistrano 的输出内容
 
-## API
-* [Grape](https://github.com/ruby-grape/grape) - Microframework to create REST-ful APIs in Ruby.
-* [ActiveModel::Serializers](https://github.com/rails-api/active_model_serializers) - Serializer brings convention over configuration to your JSON generation.
-* [Jbuilder](https://github.com/rails/jbuilder) - Jbuilder gives you a simple DSL for declaring JSON structures that beats massaging giant hash structures. This is particularly helpful when the generation process is fraught with conditionals and loops.
-* [rest-client](https://github.com/rest-client/rest-client) - Simple HTTP and REST client for Ruby, inspired by microframework syntax for specifying actions.
-* [has_scope](https://github.com/plataformatec/has_scope) - Map incoming controller parameters to named scopes in your resources.
+## API   
+* [Grape](https://github.com/ruby-grape/grape) - 提供 REST-ful APIs
+* [ActiveModel::Serializers](https://github.com/rails-api/active_model_serializers) - 通过配置方便生成 JSON
+* [Jbuilder](https://github.com/rails/jbuilder) - 提供 DSL 来定义 JSON 结构
+* [rest-client](https://github.com/rest-client/rest-client) - HTTP 和 REST 客户端
+* [has_scope](https://github.com/plataformatec/has_scope) - 在 controller 中使用named scopes
 * Documentation
-	* [Grape Swagger](https://github.com/ruby-grape/grape-swagger) - Autogenerate documentation on Grape API.
-	* [Grape Swagger UI](https://github.com/swagger-api/swagger-ui) - Display documentation that is generated using Grape Swagger.
-	* [apiary](https://apiary.io/) - Work together to quickly design, prototype, document and test APIs.
-	* [apiblueprint](https://apiblueprint.org) - API Documentation with powerful tooling.
+  * [Grape Swagger](https://github.com/ruby-grape/grape-swagger) - 为 Grape API 自动生成文档
+  * [Grape Swagger UI](https://github.com/swagger-api/swagger-ui) - Grape Swagger 的界面
+  * [apiary](https://apiary.io/) - [收费]团队协作工具，一起设计、原型、文档和测试 API
+  * [apiblueprint](https://apiblueprint.org) - API 文档
 
 ## Email
-* [letter_opener](https://github.com/ryanb/letter_opener) - Preview mail in the browser instead of sending.
+* [letter_opener](https://github.com/ryanb/letter_opener) - 在浏览器中预览邮件，而不用真实的发送
 
 ## File Uploading
-* [Carrierwave](https://github.com/carrierwaveuploader/carrierwave) - Carrierwave is a classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks.
-  * [carrierwave_backgrounder](https://github.com/lardawge/carrierwave_backgrounder) - Offload CarrierWave's image processing and storage to a background process using Delayed Job, Resque, Sidekiq, Qu, Queue Classic or Girl Friday.
-  * [CarrierWave Crop](https://github.com/kirtithorat/carrierwave-crop/) - Carrierwave extension to crop uploaded images using Jcrop plugin with preview.
-  * [CarrierWave ImageOptimizer](https://github.com/jtescher/carrierwave-imageoptimizer) - This gem allows you to simply optimize CarrierWave images via jpegoptim or optipng using the image_optimizer gem.
-* [remotipart](https://github.com/JangoSteve/remotipart) - Rails jQuery file uploads via standard Rails "remote: true" forms.
-* [MiniMagick](https://github.com/minimagick/minimagick) - MiniMagick is a ruby wrapper for ImageMagick or GraphicsMagick command line.
-* [fog](https://github.com/fog/fog) - Fog is the Ruby cloud services library, top to bottom.
-* [refile](https://github.com/refile/refile) - Refile is a modern file upload library for Ruby applications. It is simple, yet powerful.
-* [Paperclip](https://github.com/thoughtbot/paperclip) - Easy file attachment management for ActiveRecord.
-* [Dragonfly](http://markevans.github.io/dragonfly) - Dragonfly is for on-the-fly file processing - suitable for images or other attachments
+* [Carrierwave](https://github.com/carrierwaveuploader/carrierwave) - 为 Rails, Sinatra 等框架负责文件上传，很流行
+  * [carrierwave_backgrounder](https://github.com/lardawge/carrierwave_backgrounder) - 分流图片处理、并且在后台存储，用 Delayed Job, Resque, Sidekiq 等
+  * [CarrierWave Crop](https://github.com/kirtithorat/carrierwave-crop/) - 裁剪上传的图片
+  * [CarrierWave ImageOptimizer](https://github.com/jtescher/carrierwave-imageoptimizer) - 优化上传的图片
+* [remotipart](https://github.com/JangoSteve/remotipart) - Rails jQuery 上传控件
+* [MiniMagick](https://github.com/minimagick/minimagick) - ImageMagick/GraphicsMagick 的 ruby 包装
+* [fog](https://github.com/fog/fog) - 云服务管理
+* [refile](https://github.com/refile/refile) - 流行的上传库
+* [Paperclip](https://github.com/thoughtbot/paperclip) - ActiveRecord 附件管理
+* [Dragonfly](http://markevans.github.io/dragonfly) -  on-the-fly 上传工具 
 
 ## Searching
-* [ransack](https://github.com/activerecord-hackery/ransack) - Ransack enables the creation of both simple and advanced search forms for your Ruby on Rails application.
-* [elasticsearch-rails](https://github.com/elastic/elasticsearch-rails) - Elasticsearch integrations for ActiveModel/Record and Ruby on Rails.
-* [Chewy](https://github.com/toptal/chewy) - High-level Elasticsearch Ruby framework based on the official elasticsearch-ruby client.
-* [Chewy_Kiqqer](https://github.com/averell23/chewy_kiqqer) - This is an alternative update/callback mechanism for Chewy. It queues the updates as Sidekiq jobs.
-* [pg_search](https://github.com/Casecommons/pg_search) - pg_search builds ActiveRecord named scopes that take advantage of PostgreSQL's full text search
-* [sunspot](https://github.com/sunspot/sunspot) - Sunspot is a Ruby library for expressive, powerful interaction with the Solr search engine. Sunspot is built on top of the RSolr library, which provides a low-level interface for Solr interaction; Sunspot provides a simple, intuitive, expressive DSL backed by powerful features for indexing objects and searching for them.
-* [searchkick](https://github.com/ankane/searchkick) - Intelligent search made easy with Rails and Elasticsearch.
+* [ransack](https://github.com/activerecord-hackery/ransack) - 可以创建简单或复杂的搜索表单
+* [elasticsearch-rails](https://github.com/elastic/elasticsearch-rails) - 集成 Elasticsearch 
+* [Chewy](https://github.com/toptal/chewy) - 高度集成 Elasticsearch
+* [Chewy_Kiqqer](https://github.com/averell23/chewy_kiqqer) - [不再维护]
+* [pg_search](https://github.com/Casecommons/pg_search) - 充分利用 postgres 的优势
+* [sunspot](https://github.com/sunspot/sunspot) - 与 Solr 集成 
+* [searchkick](https://github.com/ankane/searchkick) - 集成 Elasticsearch
 
 ## Scheduled/Recurrence Jobs
-* [Whenever](https://github.com/javan/whenever) - Whenever is a Ruby gem that provides a clear syntax for writing and deploying cron jobs.
-* [Resque](https://github.com/resque/resque) - Redis-backed Ruby library for creating background jobs, placing them on multiple queues, and processing them later.
-* [Rufus-Scheduler](https://github.com/jmettraux/rufus-scheduler) - Rufus-scheduler is a Ruby gem for scheduling pieces of code (jobs). It understands running a job AT a certain time, IN a certain time, EVERY x time or simply via a CRON statement.
-* [Delayed Job](https://github.com/collectiveidea/delayed_job) - Database based asynchronous priority queue system.
-* [Sidekiq](https://github.com/mperham/sidekiq) - Simple, efficient background processing for Ruby.
-  * [sidetiq](https://github.com/tobiassvn/sidetiq) - Recurring jobs for sidekiq.
-  * [sidekiq-cron](https://github.com/ondrejbartas/sidekiq-cron) - Scheduler / Cron for Sidekiq jobs
-  * [sidekiq-scheduler](https://github.com/Moove-it/sidekiq-scheduler) - Lightweight job scheduler extension for Sidekiq
-* [Sucker Punch](https://github.com/brandonhilkert/sucker_punch) - Sucker punch is a single-process Ruby asynchronous processing library.
+* [Whenever](https://github.com/javan/whenever) - 定时任务
+* [Resque](https://github.com/resque/resque) - 基于 Redis 的后台延时处理任务
+* [Rufus-Scheduler](https://github.com/jmettraux/rufus-scheduler) - 又一个定时任务
+* [Delayed Job](https://github.com/collectiveidea/delayed_job) -  基于数据库的后台延时处理任务
+* [Sidekiq](https://github.com/mperham/sidekiq) - 后台延时处理任务
+  * [sidetiq](https://github.com/tobiassvn/sidetiq) - Sidekiq 的循环任务
+  * [sidekiq-cron](https://github.com/ondrejbartas/sidekiq-cron) - Sidekiq 的又一个循环任务
+  * [sidekiq-scheduler](https://github.com/Moove-it/sidekiq-scheduler) -  Sidekiq 的又一个循环任务
+* [Sucker Punch](https://github.com/brandonhilkert/sucker_punch) - 后台延时处理任务，不需要额外进程
 
 ## View Helper
-* [formtastic](https://github.com/justinfrench/formtastic) - Formtastic is a Rails FormBuilder DSL (with some other goodies) to make it far easier to create beautiful, semantically rich, syntactically awesome, readily stylable and wonderfully accessible HTML forms in your Rails applications
-* [Simple Form](https://github.com/plataformatec/simple_form) - Simple form aims to be as flexible as possible while helping you with powerful components to create your forms. The basic goal of Simple Form is to not touch your way of defining the layout, letting you find the better design for your eyes.
-* [Nested Form](https://github.com/ryanb/nested_form) - This is a Rails gem for conveniently manage multiple nested models in a single form. It does so in an unobtrusive way through jQuery or Prototype. It can also be integrated with Simple Form.
-* [meta-tags](https://github.com/kpumuk/meta-tags) - Search Engine Optimization (SEO) plugin for Ruby on Rails applications.
-* [active_link_to](https://github.com/comfy/active_link_to) - active_link_to adds css 'active' class to your links.
-* [cells](https://github.com/apotonick/cells) - Cells allow you to encapsulate parts of your UI into components into view models. View models, or cells, are simple ruby classes that can render templates.
-* [i18n Country Code Select](https://github.com/onomojo/i18n_country_select) - I18n Country Code Select Form Helper for Rails 3 & 4.
-* [Subdivision Select](https://github.com/cllns/subdivision_select) - A Rails plugin to populate a state/province select box from country_select.
-* [cocoon](https://github.com/nathanvda/cocoon) - Dynamic nested forms using jQuery made easy
+* [formtastic](https://github.com/justinfrench/formtastic) - 创建表单的 DSL
+* [Simple Form](https://github.com/plataformatec/simple_form) - 更加灵活的表单 DSL
+* [Nested Form](https://github.com/ryanb/nested_form) - 级联的表单 DSL，兼容 Simple Form
+* [meta-tags](https://github.com/kpumuk/meta-tags) - SEO 相关的库
+* [active_link_to](https://github.com/comfy/active_link_to) - 根据当前 url 自动加 active 样式
+* [cells](https://github.com/apotonick/cells) - 把公用的 UI 写到 view models
+* [i18n Country Code Select](https://github.com/onomojo/i18n_country_select) - 国家代码列表
+* [Subdivision Select](https://github.com/cllns/subdivision_select) - 二级下拉列表，包括国家、省
+* [cocoon](https://github.com/nathanvda/cocoon) - 级联的表单 DSL
 
 ## Environment Variables
-* [Config](https://github.com/railsconfig/config) - Multi-environment YAML style configurations that helps easily manage environment specific settings in an easy and usable manner.
-* [Figaro](https://github.com/laserlemon/figaro) - Figaro is very simple, Heroku-friendly Rails app configuration using ENV and a single YAML file.
-* [dotenv](https://github.com/bkeepers/dotenv) - Dotenv is a gem that allows you to set your environment variables in .env file, and it will load it in to ENV.
-* [opsworks-dotenv](https://github.com/mikamai/opsworks-dotenv) - Opsworks-dotenv let you configure the environment for you Rails application using OpsWorks, Chef and Dotenv.
+* [Config](https://github.com/railsconfig/config) - 多环境的 YAML 配置文件
+* [Figaro](https://github.com/laserlemon/figaro) - 针对 heroku 的配置办法
+* [dotenv](https://github.com/bkeepers/dotenv) - 将环境变量写到 .env 文件中
+* [opsworks-dotenv](https://github.com/mikamai/opsworks-dotenv) - 用 OpsWorks, Chef 和 Dotenv 配置环境变量
 
 ## Admin Panel
-* [ActiveAdmin](http://activeadmin.info) - ActiveAdmin is a administration framework for Ruby on Rails applications.
-  - [active_skin](https://github.com/rstgroup/active_skin): Flat skin for active admin.
-* [RailsAdmin](https://github.com/sferik/rails_admin) - RailsAdmin is a Rails engine that provides an easy-to-use interface for managing your data.
-* [Typus](https://github.com/typus/typus) - Typus is a control panel for Ruby on Rails applications to allow trusted users edit structured content.
-* [administrate](https://github.com/thoughtbot/administrate) - A Rails engine that helps you put together a super-flexible admin dashboard.
+* [ActiveAdmin](http://activeadmin.info) - 后台管理框架
+  - [active_skin](https://github.com/rstgroup/active_skin): 为 ActiveAdmin 制作的皮肤
+* [RailsAdmin](https://github.com/sferik/rails_admin) - 后台管理
+* [Typus](https://github.com/typus/typus) - 管理界面，让受信任用户管理数据
+* [administrate](https://github.com/thoughtbot/administrate) - 灵活的后台管理
 
 ## Logging
-* [Impressionist](https://github.com/charlotte-ruby/impressionist) - Impressionist can log page impressions (technically action impressions), but it is not limited to that. You can log impressions multiple times per request. And you can also attach it to a model. The goal of this project is to provide customizable stats that are immediately accessible in your application as opposed to using Google Analytics and pulling data using their API.
-* [Ahoy](https://github.com/ankane/ahoy) - Ahoy provides a solid foundation to track visits and events in Ruby, JavaScript, and native apps.
-* [Lograge](https://github.com/roidrage/lograge) - An attempt to tame Rails' default policy to log everything.
+* [Impressionist](https://github.com/charlotte-ruby/impressionist) - 记录页面访问情况，还可以为一个访问记录几次
+* [Ahoy](https://github.com/ankane/ahoy) - 记录访问情况，和事件
+* [Lograge](https://github.com/roidrage/lograge) - 改变 rails 默认的日志，使变得更好
 
 ## Debug
-* [byebug](https://github.com/deivid-rodriguez/byebug) - Byebug is a simple to use, feature rich debugger for Ruby 2. It uses the new TracePoint API for execution control and the new Debug Inspector API for call stack navigation, so it doesn't depend on internal core sources.
-  * [pry-byebug](https://github.com/deivid-rodriguez/pry-byebug) - Pry navigation commands via byebug.
-* [pry-rails](https://github.com/rweng/pry-rails) - Avoid repeating yourself, use pry-rails instead of copying the initializer to every rails project. This is a small gem which causes rails console to open pry. It therefore depends on pry.
-* [awesome_print](https://github.com/michaeldv/awesome_print) - Awesome Print is a Ruby library that pretty prints Ruby objects in full color exposing their internal structure with proper indentation.
-* [web-console](https://github.com/rails/web-console) - Web Console is a debugging tool for your Ruby on Rails applications.
-* [spring](https://github.com/rails/spring) - Spring is a Rails application preloader. It speeds up development by keeping your application running in the background so you don't need to boot it every time you run a test, rake task or migration.
-* [rails-footnotes](https://github.com/josevalim/rails-footnotes) - Rails footnotes displays footnotes in your application for easy debugging, such as sessions, request parameters, cookies, filter chain, routes, queries, etc.
-* [g](https://github.com/jugyo/g) - The Kernel.g that works like Kernel.p by using terminal-notifier or growl.
-* [terminal-notifier](https://github.com/julienXX/terminal-notifier) - terminal-notifier is a command-line tool to send Mac OS X User Notifications, which are available in Mac OS X 10.8 and higher.
-* [letter_opener](https://github.com/ryanb/letter_opener) - Preview email in the default browser instead of sending it. This means you do not need to set up email delivery in your development environment, and you no longer need to worry about accidentally sending a test email to someone else's address.
-* [Better Errors](https://github.com/charliesome/better_errors) - Better errors replaces the standard Rails error page with a much better and more useful error page.
-  * If you would like to use Better Errors' advanced features (REPL, local/instance variable inspection, pretty stack frame names), you need to add the [binding_ _of__caller](https://github.com/banister/binding_of_caller).
-* [RailsPanel](https://github.com/dejan/rails_panel) - RailsPanel is a Chrome extension for Rails development that will end your tailing of development.log.
+* [byebug](https://github.com/deivid-rodriguez/byebug) - 简单易用，不依赖其他代码
+  * [pry-byebug](https://github.com/deivid-rodriguez/pry-byebug) - 集成 Pry 与 byebug
+* [pry-rails](https://github.com/rweng/pry-rails) - 使用 pry 打开 rails console
+* [awesome_print](https://github.com/michaeldv/awesome_print) - 将 ruby 对象打印的更加漂亮
+* [web-console](https://github.com/rails/web-console) - 把 console 加到 rails 中
+* [spring](https://github.com/rails/spring) -  rails 预加载
+* [rails-footnotes](https://github.com/josevalim/rails-footnotes) - 将调试信息显示到脚注
+* [g](https://github.com/jugyo/g) - [不更新]
+* [terminal-notifier](https://github.com/julienXX/terminal-notifier) - 发送 Mac OS X 通知
+* [letter_opener](https://github.com/ryanb/letter_opener) - 在浏览器中预览邮件，而不用真实的发送
+* [Better Errors](https://github.com/charliesome/better_errors) - 替代原生的错误页面，更加漂亮有用
+* [RailsPanel](https://github.com/dejan/rails_panel) - Chrome 扩展，在浏览器上更好的显示 rails 日志
 
 ## Coding Style
-* [RuboCop](https://github.com/bbatsov/rubocop) - Rubocop is a Ruby static code analyzer. Out of the box it will enforce many of the guidelines outlined in the community [Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide).
-* [Rails Best Practice](https://github.com/railsbp/rails_best_practices) - Rails best practice is a code metric tool to check the quality of rails codes.
-* [Metric Fu]( https://github.com/metricfu/metric_fu) - A fist full of code metrics
-* [Pronto](https://github.com/mmozuras/pronto) - Quick automated code review of your changes
+* [RuboCop](https://github.com/bbatsov/rubocop) - 代码分析，遵循很多代码规范
+* [Rails Best Practice](https://github.com/railsbp/rails_best_practices) - 检查代码质量
+* [Metric Fu]( https://github.com/metricfu/metric_fu) - 检查代码质量
+* [Pronto](https://github.com/mmozuras/pronto) - 自动检查变化的代码，与 github 集成
 
 ## Testing
-* [rspec-rails](https://github.com/rspec/rspec-rails) - Rspec-rails is a testing framework for Rails 3.x and 4.x.
-* [Capybara](https://github.com/jnicklas/capybara) - Capybara helps you test web applications by simulating how a real user would interact with your app. And drivers:
-  - [capybara-webkit](https://github.com/thoughtbot/capybara-webkit) - Capybara-webkit is a capybara driver that uses Webkit via QtWebkit.
-  - [selenium-webdriver](https://github.com/vertis/selenium-webdriver) - Selenium-webdriver provides ruby bindings for WebDriver.
-  - [poltergeist](https://github.com/teampoltergeist/poltergeist) - Poltergeist allows you to run your Capybara tests on a headless WebKit browser, provided by PhantomJS.
-  - [page-object](https://github.com/cheezy/page-object) - Page-object is a simple gem that assists in creating flexible page objects for testing browser based applications.
-* [factory_girl](https://github.com/thoughtbot/factory_girl) - Factory_girl is a fixtures replacement with a straightforward definition syntax, support for multiple build strategies (saved instances, unsaved instances, attribute hashes, and stubbed objects), and support for multiple factories for the same class (user, admin_user, and so on), including factory inheritance.
-* [factory_girl_rails](https://github.com/thoughtbot/factory_girl_rails) - Factory_girl_rails provides Rails integration for factory_girl.
-* [factory_factory_girl](https://github.com/st0012/factory_factory_girl) - FactoryFactoryGirl lets you generate factory files more efficiently with naming rules.
-* [Database Cleaner](https://github.com/DatabaseCleaner/database_cleaner) - Database Cleaner is a set of strategies for cleaning your database in Ruby.Support ActiveRecord, DataMapper, Sequel, MongoMapper, Mongoid, CouchPotato, Ohm and Redis.
-* [shoulda-matchers](https://github.com/thoughtbot/shoulda-matchers) - Shoulda-matchers provides serveral matchers for testing common Rails functionality.
-* [ResponseCodeMatchers](https://github.com/r7kamura/response_code_matchers) - ResponseCodeMatchers provides rspec matchers to match http response code.
-* [SimpleCov](https://github.com/colszowka/simplecov) - SimpleCov is a code coverage analysis tool for Ruby.
-* [Timecop](https://github.com/travisjeffery/timecop) - A gem providing "time travel" and "time freezing" capabilities, making it dead simple to test time-dependent code.
-* [VCR](https://github.com/vcr/vcr) - Record your test suite's HTTP interactions and replay them during future test runs for fast, deterministic, accurate tests.
+* [rspec-rails](https://github.com/rspec/rspec-rails) - 测试框架
+* [Capybara](https://github.com/jnicklas/capybara) -模拟真实用户交互 测试 Web 应用，有这些驱动：
+  - [capybara-webkit](https://github.com/thoughtbot/capybara-webkit) - 使用 QtWebkit 的 webkit
+  - [selenium-webdriver](https://github.com/vertis/selenium-webdriver) - webdriver 支持
+  - [poltergeist](https://github.com/teampoltergeist/poltergeist) - headless WebKit browser，使用 PhantomJS
+  - [page-object](https://github.com/cheezy/page-object) - 创建灵活的页面对象来做 web 测试
+* [factory_girl](https://github.com/thoughtbot/factory_girl) - 专门用来构造模拟测试数据的,完美替代Fixture的工具
+* [factory_girl_rails](https://github.com/thoughtbot/factory_girl_rails) - factory_girl 集成到 Rails
+* [factory_factory_girl](https://github.com/st0012/factory_factory_girl) - 根据命名规则，生成 factory 文件
+* [Database Cleaner](https://github.com/DatabaseCleaner/database_cleaner) - 一系列清理数据库的策略
+* [shoulda-matchers](https://github.com/thoughtbot/shoulda-matchers) - 提供很多 matchers 来测试 Rails 的函数
+* [ResponseCodeMatchers](https://github.com/r7kamura/response_code_matchers) -  rspec matchers 匹配 http 返回值
+* [SimpleCov](https://github.com/colszowka/simplecov) - 代码测试覆盖分析工具
+* [Timecop](https://github.com/travisjeffery/timecop) - 用来测试时间相关，可以冻结时间、时间旅行
+* [VCR](https://github.com/vcr/vcr) - 记录 http 的返回内容，并在以后的测试中快速准确的重现
 
 ### Security
-* [brakeman](https://github.com/presidentbeef/brakeman) - Brakeman is a static analysis tool which checks Ruby on Rails applications for security vulnerabilities.
-* [bundle-audit](https://github.com/rubysec/bundler-audit) - bundler-audit is a patch-level verification tool for Bundler which checks for vulnerable versions of gems and insecure gem sources.
-* [Secure Headers](https://github.com/twitter/secureheaders) -  Secure Headers will automatically apply several headers that are related to security.
+* [brakeman](https://github.com/presidentbeef/brakeman) - 静态分析工具，检查程序的安全缺陷
+* [bundle-audit](https://github.com/rubysec/bundler-audit) - 检查 Bundle 的补丁等级，包括易受攻击版本和不安全的 gem 源等
+* [Secure Headers](https://github.com/twitter/secureheaders) -  自动设置安全相关的 headers
 
 ## Production
-* [Capistrano](https://github.com/capistrano/capistrano) - Remote multi-server automation tool.
-* [Slowpoke](https://github.com/ankane/slowpoke) - Rack::Timeout is great. Slowpoke makes it better.
-* [Rack Attack](https://github.com/kickstarter/rack-attack) - Rack middleware to blocking & throttling.
-* [Responders](https://github.com/plataformatec/responders) - A set of Rails responders to dry up your application.
-* [production_rails](https://github.com/ankane/production_rails) - Best practices for running Rails in production.
-* [Mina](https://github.com/mina-deploy/mina) - fast deployer and server automation tool.
+* [Capistrano](https://github.com/capistrano/capistrano) - 远程服务器部署工具
+* [Slowpoke](https://github.com/ankane/slowpoke) - Rack::Timeout 的升级版
+* [Rack Attack](https://github.com/kickstarter/rack-attack) - 防止恶意攻击、限制访问频率
+* [Responders](https://github.com/plataformatec/responders) - 一系列 responders 
+* [production_rails](https://github.com/ankane/production_rails) - Rails Best practices，一系列 Gem
+* [Mina](https://github.com/mina-deploy/mina) -  快速部署、服务器自动化工具
 
 ## Error Logging
-* [Rollbar](https://github.com/rollbar/rollbar-gem) - Exception tracking and logging from Ruby to Rollbar.
-* [Airbrake](https://github.com/airbrake/airbrake) - Notifier gem for integrating apps with Airbrake
-* [Errbit](https://github.com/errbit/errbit) - Open source notifier gem compliant with Airbrake.
+* [Rollbar](https://github.com/rollbar/rollbar-gem) - 记录错误日志并汇总到 Rollbar
+* [Airbrake](https://github.com/airbrake/airbrake) - 与 Airbrake 集成
+* [Errbit](https://github.com/errbit/errbit) - 兼容 Airbrake，开源
 
 ## Asset Pipeline
-* [Alaska](https://github.com/mavenlink/alaska) - ExecJS runtime with persistent connection to nodejs, speeds up your coffeescript compilation process during development and deployment.
+* [Alaska](https://github.com/mavenlink/alaska) - ExecJS 运行时保持与 nodejs 连接，加速 coffeescript 的编译和部署
 
-## Contribute
+## 贡献
 
-Contributions welcome! Read the [contribution guidelines](contributing.md) first.
+欢迎大家贡献代码，请先阅读 [贡献指南](contributing.md) 。
+
