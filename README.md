@@ -34,7 +34,7 @@ Awesome Rails Gem 中文版
 
 ### 授权
 * [Pundit](https://github.com/elabs/pundit) - Pundit 提供一系列方法来扩展 Ruby 的基本类和面相对象的设计模式，用以构建简单、强壮、可伸缩的认证系统
-* [cancancan](https://github.com/CanCanCommunity/cancancan) - 扩展 CanCan，可以规定某个用户拥有哪些资源，所有权限都定义在一个单独的地方( Ability 类) 
+* [cancancan](https://github.com/CanCanCommunity/cancancan) - 扩展 CanCan，可以规定某个用户拥有哪些资源，所有权限都定义在一个单独的地方( Ability 类)
 * [rolify](https://github.com/RolifyCommunity/rolify) - 角色管理
 * [acl9](https://github.com/be9/acl9/) - 基于角色的认证系统，并且提供简洁的 DSL
 
@@ -52,7 +52,7 @@ Awesome Rails Gem 中文版
 * [counter_culture](https://github.com/magnusvk/counter_culture) - 计数缓存
 * [custom_counter_cache](https://github.com/cedric/custom_counter_cache) - 简单的自定义技术缓存，可以在 model间共用
 * [Sequenced](https://github.com/djreimer/sequenced) - 管理 排序性 id 的 gem
-* [FriendlyId](https://github.com/norman/friendly_id) - URL 友好的 ID 
+* [FriendlyId](https://github.com/norman/friendly_id) - URL 友好的 ID
 * [AASM](https://github.com/aasm/aasm) - 状态机
 * [PaperTrail](https://github.com/airblade/paper_trail) - 记录版本、审计用的，记录数据的变化
 * [paranoia](https://github.com/rubysherpas/paranoia) - 假删除
@@ -77,7 +77,7 @@ Awesome Rails Gem 中文版
 * [Parity](https://github.com/thoughtbot/parity) - 为 heroku 提供 shell 命令
 * [Airbrussh](https://github.com/mattbrictson/airbrussh) - 美化 SSHKit 和 Capistrano 的输出内容
 
-## API   
+## API
 * [Grape](https://github.com/ruby-grape/grape) - 提供 REST-ful APIs
 * [ActiveModel::Serializers](https://github.com/rails-api/active_model_serializers) - 通过配置方便生成 JSON
 * [Jbuilder](https://github.com/rails/jbuilder) - 提供 DSL 来定义 JSON 结构
@@ -102,15 +102,15 @@ Awesome Rails Gem 中文版
 * [fog](https://github.com/fog/fog) - 云服务管理
 * [refile](https://github.com/refile/refile) - 流行的上传库
 * [Paperclip](https://github.com/thoughtbot/paperclip) - ActiveRecord 附件管理
-* [Dragonfly](http://markevans.github.io/dragonfly) -  on-the-fly 上传工具 
+* [Dragonfly](http://markevans.github.io/dragonfly) -  on-the-fly 上传工具
 
 ## 搜索
 * [ransack](https://github.com/activerecord-hackery/ransack) - 可以创建简单或复杂的搜索表单
-* [elasticsearch-rails](https://github.com/elastic/elasticsearch-rails) - 集成 Elasticsearch 
+* [elasticsearch-rails](https://github.com/elastic/elasticsearch-rails) - 集成 Elasticsearch
 * [Chewy](https://github.com/toptal/chewy) - 高度集成 Elasticsearch
 * [Chewy_Kiqqer](https://github.com/averell23/chewy_kiqqer) - [不再维护]
 * [pg_search](https://github.com/Casecommons/pg_search) - 充分利用 postgres 的优势
-* [sunspot](https://github.com/sunspot/sunspot) - 与 Solr 集成 
+* [sunspot](https://github.com/sunspot/sunspot) - 与 Solr 集成
 * [searchkick](https://github.com/ankane/searchkick) - 集成 Elasticsearch
 
 ## 定时任务
@@ -163,7 +163,6 @@ Awesome Rails Gem 中文版
 * [rails-footnotes](https://github.com/josevalim/rails-footnotes) - 将调试信息显示到脚注
 * [g](https://github.com/jugyo/g) - [不更新]
 * [terminal-notifier](https://github.com/julienXX/terminal-notifier) - 发送 Mac OS X 通知
-* [letter_opener](https://github.com/ryanb/letter_opener) - 在浏览器中预览邮件，而不用真实的发送
 * [Better Errors](https://github.com/charliesome/better_errors) - 替代原生的错误页面，更加漂亮有用
 * [RailsPanel](https://github.com/dejan/rails_panel) - Chrome 扩展，在浏览器上更好的显示 rails 日志
 
@@ -199,7 +198,7 @@ Awesome Rails Gem 中文版
 * [Capistrano](https://github.com/capistrano/capistrano) - 远程服务器部署工具
 * [Slowpoke](https://github.com/ankane/slowpoke) - Rack::Timeout 的升级版
 * [Rack Attack](https://github.com/kickstarter/rack-attack) - 防止恶意攻击、限制访问频率
-* [Responders](https://github.com/plataformatec/responders) - 一系列 responders 
+* [Responders](https://github.com/plataformatec/responders) - 一系列 responders
 * [production_rails](https://github.com/ankane/production_rails) - Rails Best practices，一系列 Gem
 * [Mina](https://github.com/mina-deploy/mina) -  快速部署、服务器自动化工具
 
